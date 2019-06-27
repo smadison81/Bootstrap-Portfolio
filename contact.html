@@ -1,144 +1,80 @@
 <!doctype html>
 <html lang="en-us">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>About | Your Name</title>
-        <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      
-          <style>
-              * {
-                margin: 0;
-                padding: 0;
-              }
-          
-              .navbar {
-                min-height: 100px;
-              }
-              .navbar-brand{
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>About | Your Name</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-                font-size: 40px;
+</head>
 
-              }
 
-              .backgroundclass {
-                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-                font-size: 18px;
-                line-height: 34px;
-                color: #777777;
-                background: url("assets/images/concrete_seamless.png");
-                position: relative;
-                min-height: 100vh;
-                padding-bottom: 2.5rem;
-              }
-          
-              img {
-                width: 200px;
-                float: left;
-              }
-          
-              footer {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                min-height: 50px;
-                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-                font-size: 18px;
-                line-height: 34px;
-                color: #ffffff;
-                position: fixed;
-                height: 2.5rem; 
-              }
-            </style>
-      
-      </head>
-      
-      
-      
-      <body class="backgroundclass">
-        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-          <div class="container">
-            <a class="navbar-brand" href="#">Stephen Madison</a>
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 b4end">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
 
-  <!-- <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Contact</h1>
+<body class="backgroundclass position-relative">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Stephen Madison</a>
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0 b4end">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
-      </form>
-
-    </section>
-
-  </div> -->
-<div class="backgroundclass">
-  <div class="container border" style="width: 768px">
-    <div class="controls">
-
-      <div class="row">
-        <div class="col-md-4">
+  <div class= "backgroundclass py-5 my-5">
+    <form>
+      <div class="row justify-content-md-center">
+        <div class="col-md-6">
           <div class="form-group">
-            <label for="form_name">Firstname *</label>
+            <label for="form_name">Full Name *</label>
             <input id="form_name" type="text" name="name" class="form-control"
-              placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-            <div class="help-block with-errors"></div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="form-group">
-            <label for="form_lastname">Lastname *</label>
-            <input id="form_lastname" type="text" name="surname" class="form-control"
-              placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
-            <div class="help-block with-errors"></div>
+              placeholder="Please enter your Full Name *" required="required" data-error="Firstname is required.">
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4">
+      <div class="row justify-content-md-center">
+        <div class="col-md-6">
           <div class="form-group">
             <label for="form_email">Email *</label>
             <input id="form_email" type="email" name="email" class="form-control"
               placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-            <div class="help-block with-errors"></div>
           </div>
         </div>
       </div>
-    </div>
-    <input type="submit">
+      <div class="row justify-content-md-center">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="form_phone">Phone</label>
+            <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="form_message">Message *</label>
+            <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4"
+              required="required" data-error="Please,leave us a message."></textarea>
+          </div>
+        </div>
+        <div class="row justify-content-md-center col-md-12">
+          <input type="submit" class="btn btn-success btn-send" value="Send message">
+        </div>
+      </div>
   </div>
-</div>
+
   </form>
+  </div>
 
   <footer class="bg-primary">
     <div class="text-center py-3">
