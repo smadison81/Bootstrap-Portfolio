@@ -23,7 +23,6 @@
   line-height: 34px;
   color: #777777;
   background: url("/assets/images/concrete_seamless.png");
-  position: relative;
   min-height: 100vh;
   padding-bottom: 2.5rem;
 }
